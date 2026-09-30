@@ -11,3 +11,4 @@ All notable changes to this project are documented here. Format: [Keep a Changel
 
 ### Changed
 - Make QR the clear onboarding path and halve the setup guide; clarify that Telegram API ID/hash remain mandatory.
+- Show where to create the Telegram API app and copy its ID/hash; explain why QR or a bot token cannot replace them.
