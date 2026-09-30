@@ -1,0 +1,17 @@
+# Publication allowlist: only explicitly reviewed code and documentation are tracked.
+*
+!/.gitignore
+!/.env.example
+!/LICENSE
+!/README.md
+!/CHANGELOG.md
+!/pyproject.toml
+!/uv.lock
+!/src/
+!/src/telegram_account_mcp/
+!/src/telegram_account_mcp/*.py
+!/tests/
+!/tests/*.py
+!/.github/
+!/.github/workflows/
+!/.github/workflows/*.yml
