@@ -7,3 +7,4 @@ All notable changes to this project are documented here. Format: [Keep a Changel
 ### Added
 - Local stdio Telegram MCP with text history, date-grouped reads, opt-in sends, chat allowlists, and QR/phone login; no conversation cache.
 - Restrict reads/sends by chat, recheck resolved recipients, require private sessions, and cap date queries to 31 days.
+- Verify terminal QR rendering alongside fake-client login and real stdio MCP protocol tests.

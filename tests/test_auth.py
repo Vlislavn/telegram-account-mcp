@@ -74,6 +74,14 @@ def settings(tmp_path):
     return Settings(123, "private-api-hash", tmp_path / "sessions" / "account.session", None, False)
 
 
+def test_terminal_qr_renderer_emits_blocks_without_raw_token(capsys):
+    auth._render_qr("tg://login?token=fixture-not-real")
+    output = capsys.readouterr().out
+    assert len(output.splitlines()) > 10
+    assert "fixture-not-real" not in output
+    assert "█" in output
+
+
 @pytest.mark.asyncio
 async def test_already_authorized(settings, capsys):
     client = FakeClient(settings.session_path, settings.api_id, settings.api_hash, authorized=True)
